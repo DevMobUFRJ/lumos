@@ -14,16 +14,6 @@ const BottomLanding = ({
   return (
     <div className='bottom-landing-container'
          style={{marginTop: marginTop}}>
-       <p id='bottom-landing-text'>Veja alguns dos videos e jogos educativos 
-        que disponibilizamos em nossas redes sociais</p>
-
-        <Carousel
-        />
-
-        <div className='text-container' id='carousel-link'>
-          <p style={{textDecoration: 'underline', fontSize: '3.8vw'}}>Ver todos</p>
-          <p style={{fontSize: '3.8vw'}}>→</p>
-        </div>
 
         <div className='card-container'
           style={{

@@ -6,7 +6,6 @@ import './LightMatch.css';
 import ResultsButton from '../../Components/ResultsButton/ResultsButton';
 import InputOption from '../../Components/InputOption/InputOption';
 import InputSize from '../../Components/InputSize/InputSize';
-import MainPageHeader from '../../Components/LogoLumos/MainPageHeader';
 import NavBar from '../../Components/NavBar/NavBar';
 import { useNavigate } from 'react-router-dom';
 
@@ -51,8 +50,6 @@ const Bedroom = () => {
     <div className='root-lightmatch'>
 
       <div className='container-light-match'>
-        <MainPageHeader />
-
         <div id='divLightMatch'>
             
             <div id='divButtonRoom'>

@@ -3,8 +3,8 @@ import { HashRouter as Router, Route, Routes, useNavigate } from 'react-router-d
 import CardComponent from './Components/CardComponent/CardComponent';
 import { motion, AnimatePresence } from 'framer-motion';
 import img1 from './Assets/Images/lampada_cortada.png';
-import img2 from './Assets/Images/removal 4.png';
-import img3 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
+import img2 from './Assets/Images/JEMA_GER_1639-09-removebg-preview 1.png';
+import img3 from './Assets/Images/removal 4.png';
 import arrow from './Assets/Images/Vector.svg';
 import './App.css';
 import HomePage from './Components/Home';
@@ -28,15 +28,15 @@ const cardData = [
   },
   {
     image: img2,
-    title: 'Você sabe o que é Luz geral?',
-    description: 'Lumos explica! Descubra como identificar a iluminação geral na sua casa',
-    color: '#984D08',
-  },
-  {
-    image: img3,
     title: 'Explore mais sobre o mundo da iluminação',
     description: 'Com o Glossário você é capaz de entender a importância das propriedades lumínicas e as informações nas embalagens dos produtos de iluminação',
     color: '#7C3F0B',
+  },
+  {
+    image: img3,
+    title: 'Você sabe o que é Luz geral?',
+    description: 'Lumos explica! Descubra como identificar a iluminação geral na sua casa',
+    color: '#984D08',
   },
 ];
 
@@ -78,7 +78,7 @@ const Home = () => {
           bottom: '11.5vh', 
           left: '5vw',
           fontSize: '0.9rem',
-          fontWeight: '400'}}>Lumos © 2024 All rights reserved</div>
+          fontWeight: '400'}}>Lumos © 2025 All rights reserved</div>
         <div style={{ position: 'absolute', bottom: '10vh', right: '5vw' }}>
           <motion.button
             onClick={handleNext}
