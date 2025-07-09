@@ -9,6 +9,7 @@ import arrow from './Assets/Images/Vector.svg';
 import './App.css';
 import HomePage from './Components/Home';
 import LuzGeral from './Components/LuzGeral';
+import AtitudesSustentaveis from './Components/AtitudesSustentaveis/AtitudesSustentaveis'
 import Faq from './Components/Faq';
 import Kitchen from './Components/LightMatch/Kitchen';
 import Room from './Components/LightMatch/Room';
@@ -138,6 +139,7 @@ const App = () => {
                 </motion.div>
               </AnimatePresence>} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/atitudes-sustentaveis" element={<AtitudesSustentaveis />} />
           <Route path="/result" element={<AnimatePresence mode='wait'>
             <motion.div
               initial={{ opacity: 0, x: 100 }}
