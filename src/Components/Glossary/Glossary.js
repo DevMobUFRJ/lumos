@@ -42,7 +42,7 @@ const Glossary = () => {
                     upperText='Fluxo Energético ou Potência'
                     bottomText='Watts (w)'
                     dropdownImg={dropdown2}
-                    dropdownText='É a quantidade de energia elétrica consumida que o equipamento precisa para emitir determinada quantidade de luz (fluxo luminoso). Isso mostra a demanda de instalação de sistema de iluminação elétrica e o consumo elétrico, bem como, a eficiência energética do equipamento. Quanto menos eletricidade o equipamento precisar para a emissão daquela quantidade de fluxo luminoso, maior será sua eficiência energética ou seu rendimento luminoso *** (Lm/W).'
+                    dropdownText='É a quantidade de energia elétrica consumida que o equipamento precisa para emitir determinada quantidade de luz (fluxo luminoso). Isso mostra a demanda de instalação de sistema de iluminação elétrica e o consumo elétrico, bem como, a eficiência energética do equipamento. Quanto menos eletricidade o equipamento precisar para a emissão daquela quantidade de fluxo luminoso, maior será sua eficiência energética ou seu rendimento luminoso (Lm/W).'
                 />
 
                 <GlossaryCard 
@@ -78,7 +78,7 @@ const Glossary = () => {
                     upperText='Índice de Reprodução de Cor ou IRC'
                     bottomText='RA'
                     dropdownImg={dropdown5}
-                    dropdownText='O indice de reprodução de cor indica quanto a luz da sua fonte (luz artificial) reproduz fielmente as cores de uma objeto ou superficie, comparado com as cores que são percebidas por você quando esse mesmo objeto e superfície é iluminada pela luz do sol (luz natural) ao meio dia. Em uma residência, de modo geral, todas as fontes de luz precisam ter um IRC de bom a excelente, o que varia entre 80RA e 100RA.'
+                    dropdownText='O indice de reprodução de cor indica quanto a luz da sua fonte (luz artificial) reproduz fielmente as cores de um objeto ou superficie, comparado com as cores que são percebidas por você quando esse mesmo objeto e superfície são iluminados pela luz do sol (luz natural) ao meio dia. Em uma residência, de modo geral, todas as fontes de luz precisam ter um IRC de bom a excelente, o que varia entre 80RA e 100RA.'
                 />
             </div>
 
