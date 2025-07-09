@@ -1,15 +1,14 @@
 import './Result.css';
-import React from 'react';
 import plus from '../../Assets/Images/plus.png';
 import { Link } from 'react-router-dom';
 import imgLamp1 from '../../Assets/Images/imgLamp1.png';
 import imgLamp2 from '../../Assets/Images/imgLamp2.png';
 
-const Result = ({angle, irc, lumen, temperature}) => {
+const Result = ({angle, irc, lumen, temperature, room}) => {
     const texts = [
         {
             index: "1",
-            text: "Lumos recomenda que você procure fontes de luz (lâmpadas/painéis) com e ssas unidades fotométricas que listamos aqui para que a luz geral do seu cômodo lhe oferte conforto lumínico!"
+            text: "Lumos recomenda que você procure fontes de luz (lâmpadas/painéis) com essas unidades fotométricas que listamos aqui para que a luz geral do seu cômodo lhe oferte conforto lumínico!"
         }, 
         {
             index: "2",
@@ -25,10 +24,18 @@ const Result = ({angle, irc, lumen, temperature}) => {
         }
     ];
 
+    const getRoomName = (room) => {
+        if(room == 'Room') return 'sala';
+        else if(room == 'Bedroom') return 'quarto';
+        else if(room == 'Kitchen') return 'cozinha/lavanderia';
+        else return 'banheiro'
+    };
+
     return (
         <div className='result-screen'>
             <div className='result-screen-header'>
                 <div className='result-screen-title'>
+                    <h3>Resultado obtido para cômodo {getRoomName(room)}!</h3>
                     {texts[0].text}
                 </div>
                 <div className='result-screen-close'>

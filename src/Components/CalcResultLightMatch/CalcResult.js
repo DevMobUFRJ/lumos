@@ -10,25 +10,43 @@ const CalcResult = () => {
   useEffect(() => {
     let lux;
     let temperature;
+
     if(info.Ambient === 'Bedroom'){
+      if(info.AmountOfDarkSurface >= 6){
         lux = info.DescriptionAge === 'Uso preferencial de idosos'
-          ? 200
+          ? 300
           : info.DescriptionAge === 'Uso preferencial de crianças'
-          ? 100
-          : 150;
+          ? 150
+          : 200;
+      } else {
+        lux = info.DescriptionAge === 'Uso preferencial de idosos'
+            ? 200
+            : info.DescriptionAge === 'Uso preferencial de crianças'
+            ? 100
+            : 150;
+      }
+      
+      temperature = '2700K a 4000K';
+    } else if(info.Ambient == 'Room'){
+        if(info.AmountOfDarkSurface >= 6){
+          lux = info.DescriptionAge === 'Uso preferencial de idosos'
+            ? 300
+            : 200;
+        } else {
+          lux = info.DescriptionAge === 'Uso preferencial de idosos' ? 200 : 150;
+        }
+
         temperature = '2700K a 4000K';
     } else if(info.Ambient === 'Kitchen'){
         lux = info.DescriptionAge === 'Uso preferencial de idosos' ? 500 : 300;
         temperature = '4000K a 6500K';
     } else {
         lux = info.DescriptionAge === 'Uso preferencial de idosos' ? 200 : 150;
-        temperature = '2700K a 4000K';
+        temperature = '4000K a 6500K';
     }
 
-    const fd = info.DescriptionLuminaria === 'Aberta (a lâmpada fica visível)' ? 0.89 : 0.88;
-
     const size = parseFloat(info.Size);
-    const lmi = (lux * size) / (info.NumberOfPointLight * info.AmountOfLampsPerPoint * fd);
+    const lmi = (lux * size) / (info.NumberOfPointLight * info.AmountOfLampsPerPoint);
     const lumen = Math.floor(lmi);
 
     navigate('/result', {
@@ -36,7 +54,8 @@ const CalcResult = () => {
         angle: 'Maior ou igual a 120°',
         irc: '80 RA',
         lumen: `${lumen} Lm`,
-        temperature: `${temperature}`
+        temperature: `${temperature}`,
+        room: info.Ambient
       }
     });
   }, [info, navigate]);

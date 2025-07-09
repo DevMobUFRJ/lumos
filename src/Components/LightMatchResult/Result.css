@@ -20,6 +20,10 @@
     text-align: justify;
     color: #756559;
   }
+
+  .result-screen-title h3 {
+    margin-bottom: 1rem;
+  }
   
   .result-screen-close button {
     background: none;

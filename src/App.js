@@ -107,10 +107,10 @@ const Home = () => {
 
 const ResultWrapper = () => {
   const location = useLocation();
-  const { angle, irc, lumen, temperature } = location.state;
+  const { angle, irc, lumen, temperature, room } = location.state;
 
   return (
-    <Result angle={angle} irc={irc} lumen={lumen} temperature={temperature} />
+    <Result angle={angle} irc={irc} lumen={lumen} temperature={temperature} room={room} />
   );
 };
 
