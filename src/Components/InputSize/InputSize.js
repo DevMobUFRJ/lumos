@@ -1,11 +1,4 @@
 import './InputSize.css';
-import infoIcon from '../../Assets/Images/Info.png';
-
-function analisandoTamanho(event) {
-  if(event.target.value.length > 4) {
-    event.target.value = event.target.value.slice(0, 4);    
-  }
-}
 
 const InputSize = ({ }) => {
   return (
@@ -13,14 +6,16 @@ const InputSize = ({ }) => {
     <div id="divPrincipalInputSize">
 
         <div id="divDescricao">
-          <h3 className='divPrincipalTitulo'>Tamanho</h3>
-          <img src={infoIcon} id="iconInfo" alt="Info"/>
+          <h3 className='divPrincipalTitulo'>Dimensões (m)</h3>
         </div>
-        <div id="divInputSize">
-          <input id='inputSize' type="number" onChange={analisandoTamanho}></input>
-          <h3>m²</h3>
+        <div className='div-input-size-container'>
+          <div className="divInputSize">
+            <input class='inputSize' id='inputWidth' type="number" placeholder='Largura'></input>
+          </div>
+          <div className="divInputSize">
+            <input class='inputSize' id='inputLength' type="number" placeholder='Comprimento' ></input>
+          </div>
         </div>
-
 
     </div>
   );

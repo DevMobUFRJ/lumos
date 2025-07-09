@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-#DivReader h3{
+#buttons-container h3{
     font-size: 6vw;
     font-weight: 500;
-    margin-bottom: 0.6rem;
 }
 
-#buttons {
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: none;
     scrollbar-width: none; 
     gap: 0.6rem;
     width: 100%;
+    margin-top: 0.6rem;
 }
 
 .buttons-room-button {

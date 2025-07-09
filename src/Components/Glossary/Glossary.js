@@ -1,4 +1,3 @@
-import React from 'react';
 import './Glossary.css';
 import GlossaryCard from './GlossaryCard';
 import NavBar from '../NavBar/NavBar';

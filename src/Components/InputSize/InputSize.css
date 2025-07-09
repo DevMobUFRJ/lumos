@@ -9,13 +9,9 @@
     width: 46%;
 }
 
-#iconInfo{
-    width: 5vw;
-    height: 5vw;
-}
-
-#inputSize{
-    width: 100%;
+.inputSize{
+    width: 95%;
+    height: 100%;
     border: none;
     border-radius: 50px;
     margin-top: 1%;
@@ -27,23 +23,37 @@
     outline: none;
 }
 
+.inputSize::placeholder {
+  font-size: 10px;
+  color: black;
+  font-style: italic;
+}
+
 .divPrincipalTitulo {
     font-size: 4vw;
 }
 
-#divInputSize{
+.div-input-size-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.divInputSize{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
     height: 3rem;
     border: 2.5px solid #DBD7CE;  
     border-radius: 50px;
     margin-top: 1%;
     overflow: hidden;
-    padding: 0 1rem 0 1rem;
+    padding: 0 0.3rem 0 0.3rem;
 }
 
-#divInputSize h3 {
+.divInputSize h3 {
     font-weight: 400;
 }

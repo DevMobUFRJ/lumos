@@ -13,6 +13,7 @@ import Faq from './Components/Faq';
 import Kitchen from './Components/LightMatch/Kitchen';
 import Room from './Components/LightMatch/Room';
 import Bedroom from './Components/LightMatch/Bedroom';
+import Bathroom from './Components/LightMatch/Bathroom';
 import Glossary from './Components/Glossary/Glossary';
 import Result from './Components/LightMatchResult/Result';
 import CalcResult from './Components/CalcResultLightMatch/CalcResult';
@@ -125,6 +126,7 @@ const App = () => {
           <Route path="/sala" element={<Room/>} />
           <Route path="/cozinha" element={<Kitchen/>} />
           <Route path="/quarto" element={<Bedroom/>} />
+          <Route path="/banheiro" element={<Bathroom/>} />
           <Route path="/luz-geral" element={<AnimatePresence mode='wait'>
                 <motion.div
                   initial={{ opacity: 0, x: 100 }}

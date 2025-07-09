@@ -18,25 +18,17 @@ const Bedroom = () => {
    
     const info = {
       NumberOfPointLight: NumberOfPointLight,
-      Size: document.getElementById("inputSize").value,
+      Size: document.getElementById("inputWidth").value * document.getElementById("inputLength").value,
       AmountOfLampsPerPoint: AmountOfLampsPerPoint,
       AmountOfDarkSurface: AmountOfDarkSurface,
-      DescriptionLuminaria: document.getElementsByClassName("custom-select")[0].value,
-      DescriptionAge: document.getElementsByClassName("custom-select")[1].value,
+      DescriptionAge: document.getElementsByClassName("custom-select")[0].value,
       Ambient: 'Bedroom',
     }
 
     navigate('/calcular', { state: { info } });
   }
 
-
-
-  const InputOption1 = {
-    titulo: "Descreva sua luminária",
-    opcoes: ["Fechada (a lâmpada não fica visível)", "Aberta (a lâmpada fica visível)"]
-  }
-
-  const InputOption2  = {
+  const InputOptionParameters  = {
     titulo: "Faixa etária dos residentes",
     opcoes: ["Uso preferencial de idosos", "Uso misto", "Uso preferencial de crianças"]
   }
@@ -53,7 +45,7 @@ const Bedroom = () => {
         <div id='divLightMatch'>
             
             <div id='divButtonRoom'>
-                <ButtonRoom colorRoom={false} colorKitchen={false} colorBedroom={true}/>
+                <ButtonRoom colorRoom={false} colorKitchen={false} colorBedroom={true} colorBathroom={false} />
             </div>
 
             <h3 className='infoComodo'>Informações sobre o cômodo</h3>
@@ -65,9 +57,10 @@ const Bedroom = () => {
             </div>
 
             <InputAmountLarge amount={AmountOfLampsPerPoint} setAmount={setAmountOfLampsPerPoint} HaveInfo={false} TypeOfInput={"Quantidade de lâmpadas por ponto"}/>
-            <InputOption nameOfInput={InputOption1.titulo} optionsArray={InputOption1.opcoes}/>
+
             <InputAmountLarge amount={AmountOfDarkSurface} setAmount={setAAmountOfDarkSurface} HaveInfo={true} TypeOfInput={"Quantidade de superfícies escuras"}/>
-            <InputOption nameOfInput={InputOption2.titulo} optionsArray={InputOption2.opcoes}/>
+
+            <InputOption nameOfInput={InputOptionParameters.titulo} optionsArray={InputOptionParameters.opcoes}/>
             
             <div id='divbotao' onClick={getResult}>
               <ResultsButton />

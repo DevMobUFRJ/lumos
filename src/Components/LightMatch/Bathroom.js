@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Room = () => {
+const Bathroom = () => {
   const navigate = useNavigate();
   
   function getResult() {
@@ -22,7 +22,7 @@ const Room = () => {
       AmountOfLampsPerPoint: AmountOfLampsPerPoint,
       AmountOfDarkSurface: AmountOfDarkSurface,
       DescriptionAge: document.getElementsByClassName("custom-select")[0].value,
-      Ambient: 'Room',
+      Ambient: 'Bathroom',
     }
 
     navigate('/calcular', { state: { info } });
@@ -44,7 +44,7 @@ const Room = () => {
         <div id='divLightMatch'>
           
             <div id='divButtonRoom'>
-                <ButtonRoom colorRoom={true} colorKitchen={false} corBedroom={false} colorBathroom={false} />
+                <ButtonRoom colorRoom={false} colorKitchen={false} corBedroom={false} colorBathroom={true} />
             </div>
 
             <h3 className='infoComodo'>Informações sobre o cômodo</h3>
@@ -72,4 +72,4 @@ const Room = () => {
     );
 };
 
-export default Room;
+export default Bathroom;
