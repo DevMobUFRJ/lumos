@@ -11,7 +11,7 @@ const Home = () => {
                 <TopLanding
                 />
                 <BottomLanding
-                    marginTop={'4rem'}
+                    marginTop={'2rem'}
                 />
             </div>
             <NavBar colorFaq={false} colorGlossario={false} colorHome={true} colorLightMatch={false}/>

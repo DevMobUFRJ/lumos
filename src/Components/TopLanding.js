@@ -40,45 +40,27 @@ const TopLanding = () => {
 
         <div className='board-box'>
           <div id='top-boards'>
-          <Link to="/sala" style={{ textDecoration: 'none', width:'100%', color: 'inherit', marginRight: '1rem' }}>
-            <Board
-              backgroundColor="#FEB800"
-              width="100%"
-              height="11.5rem"
-              borderRadius="1.4rem"
-              border="none"
-              text="Light Match"
-              fontSize="1.5rem"
-              padding="1.3rem"
-              textDivWidth="4rem"
-              imgBorder="1px solid black"
-              image={lightMatch}
-            />
-          </Link>  
+            <Link to="/sala" style={{ textDecoration: 'none', width:'100%', color: 'inherit', marginRight: '1rem' }}>
+              <Board
+                backgroundColor="#FEB800"
+                width="100%"
+                height="7.5rem"
+                borderRadius="1.4rem"
+                border="none"
+                text="Light Match"
+                fontSize="1.5rem"
+                padding="1.3rem"
+                textDivWidth="4rem"
+                imgBorder="1px solid black"
+                image={lightMatch}
+              />
+            </Link>  
 
-          <Link to="/glossario" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
-            <Board
-              backgroundColor="white"
-              width="100%"
-              height="11.5rem"
-              borderRadius="1.4rem"
-              border="3px solid #FEB800"
-              text="Glossário"
-              fontSize="1.5rem"
-              padding="1.3rem"
-              imgBorder="1px solid #FEB800"
-              imgColor="#FEB800"
-              image={glossario}
-            />
-          </Link>
-          </div>
-
-          <div id='bottom-board'>
             <Link to="/faq" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
               <Board
                 backgroundColor="white"
                 width="100%"
-                height="11.5rem"
+                height="7.5rem"
                 borderRadius="1.4rem"
                 border="3px solid #FEB800"
                 text="FAQ"
@@ -89,6 +71,24 @@ const TopLanding = () => {
                 image={faq}
               />
             </Link>
+          </div>
+
+          <div id='bottom-board'>
+            <Link to="/glossario" style={{ textDecoration: 'none', width:'100%', color: 'inherit' }}>
+              <Board
+                backgroundColor="white"
+                width="100%"
+                height="7.5rem"
+                borderRadius="1.4rem"
+                border="3px solid #FEB800"
+                text="Glossário"
+                fontSize="1.5rem"
+                padding="1.3rem"
+                imgBorder="1px solid #FEB800"
+                imgColor="#FEB800"
+                image={glossario}
+              />
+          </Link>
           </div>
         </div>
     </div>
