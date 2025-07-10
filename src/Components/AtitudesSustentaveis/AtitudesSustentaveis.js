@@ -1,5 +1,7 @@
 import './AtitudesSustentaveis.css';
 import { useNavigate } from "react-router-dom";
+import leftArrowImage from "../../Assets/Images/leftArrow.svg";
+import shareImage from "../../Assets/Images/share.svg";
 
 const AtitudesSustentaveis = () => {
     const navigate = useNavigate();
@@ -10,16 +12,25 @@ const AtitudesSustentaveis = () => {
     return (
         <div className="atitudes-sustentaveis">
             <div className="atitudes-title-container">
+                <div className="atitudes-title-buttons-container">
+                    <div
+                        onClick={handleClose} 
+                        className="atitudes-button">
+                        <img src={leftArrowImage} alt='Home'></img>
+                    </div>
+
+                    <div className="atitudes-button">
+                        <img src={shareImage} alt='Compartilhar'></img>
+                    </div>
+                </div>
+
                 <div className="atitudes-title">
                     <p className="atitudes-title-text">
                        Atitudes Sustentáveis
                     </p>
-                </div>
-
-                <div
-                    onClick={handleClose} 
-                    className="atitudes-button">
-                    <p>✕</p>
+                    <p className="atitudes-title-subtext">
+                       LabCa (UFRJ)
+                    </p>
                 </div>
             </div>
 
