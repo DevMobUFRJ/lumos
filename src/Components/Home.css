@@ -49,6 +49,7 @@
 .button-container {
     width: 95%;
     height: 45%;
+    margin-top: -0.6rem;
     display: flex;
     align-items: center;
     justify-content: right;

@@ -1,4 +1,3 @@
-import React from 'react';
 import StaticButton from './Buttons';
 import Board from './Board';
 import { Link } from 'react-router-dom';
@@ -23,18 +22,17 @@ const TopLanding = () => {
         }}>
             <div className='card'>
                 <p className='card-text'>Conheça o projeto <b id="card-text_top_landing">Atitudes Sustentáveis!</b></p>
-                <div className='button-container'
-                style={{marginTop: '-0.6rem'}}>
-                  <StaticButton 
-                    text="Saiba mais →" 
-                    fontSize="4vw"
-                    buttonWidth="45%" 
-                    buttonHeight="90%" 
-                    buttonBorderRadius="2rem" 
-                    backgroundColor="#FEB800" 
-                    buttonBorder="none"
-                  />
-                </div>
+                  <Link to="/atitudes-sustentaveis" className='button-container' style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <StaticButton 
+                      text="Saiba mais →" 
+                      fontSize="4vw"
+                      buttonWidth="45%" 
+                      buttonHeight="90%" 
+                      buttonBorderRadius="2rem" 
+                      backgroundColor="#FEB800" 
+                      buttonBorder="none"
+                    />
+                  </Link>
             </div>
         </div>
 
