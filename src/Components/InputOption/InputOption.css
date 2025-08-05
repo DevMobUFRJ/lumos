@@ -1,10 +1,14 @@
-.select-container {
+.inputoptions-container {
   position: relative;
   margin-top: 1.5rem;
   width: 100%;
   justify-content: center;
   align-items: center;
   align-self: center;
+}
+
+.inputoptions-select-container {
+  width: 100%;
 }
 
 .custom-select {
@@ -43,4 +47,5 @@
   position: absolute;
   top: 57%;
   right: 6%;
+  pointer-events: none;
 }

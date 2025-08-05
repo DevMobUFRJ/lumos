@@ -5,20 +5,21 @@ const InputOption = ({nameOfInput, optionsArray}) => {
 
 
     return (
-        <div className="select-container">
+        <div className="inputoptions-container">
             <label className="select-label">{nameOfInput}</label>
 
-            <select name="opcoes" id="custom-select" className="custom-select">
+            <div className="inputoptions-select-container">
+                <select name="opcoes" id="custom-select" className="custom-select">
 
-                {optionsArray.map((option) => (
-                    <option key={option} value={option}>
-                        {option}
-                    </option>
-                ))}
-
-            </select>
-
-            <img src={setaSelect} id='setaSelect'/>
+                    {optionsArray.map((option) => (
+                        <option key={option} value={option}>
+                            {option}
+                        </option>
+                    ))}
+                </select>
+                
+                <img src={setaSelect} id='setaSelect'/>
+            </div>
         </div>
     )
 }
