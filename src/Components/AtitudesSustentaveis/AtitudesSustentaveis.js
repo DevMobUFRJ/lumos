@@ -2,6 +2,8 @@ import './AtitudesSustentaveis.css';
 import { useNavigate } from "react-router-dom";
 import leftArrowImage from "../../Assets/Images/leftArrow.svg";
 import shareImage from "../../Assets/Images/share.svg";
+import devmob from "../../Assets/Images/devmob.png";
+import labca from "../../Assets/Images/labca.png";
 import InformationPopup from '../InformationPopup/InformationPopup';
 
 const AtitudesSustentaveis = () => {
@@ -71,6 +73,8 @@ const AtitudesSustentaveis = () => {
                     text={labcaText}
                     containerId="popup-labca"
                     blackoutId="popup-blackout"
+                    bottomImg={labca}
+                    bottomImgSize="16rem"
                 />
             </div>
 
@@ -80,6 +84,8 @@ const AtitudesSustentaveis = () => {
                     text={devmobText}
                     containerId="popup-devmob"
                     blackoutId="popup-blackout"
+                    bottomImg={devmob}
+                    bottomImgSize="15rem"
                 />
             </div>
 

@@ -50,3 +50,13 @@
     font-size: 0.9rem;
     font-weight: 400;
 }
+
+.popup-image-container {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

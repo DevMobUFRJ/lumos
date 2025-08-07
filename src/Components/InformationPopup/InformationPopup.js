@@ -2,7 +2,7 @@ import React from 'react';
 import './InformationPopup.css';
 
 
-const InformationPopup = ({ title, text, containerId, blackoutId }) => {  
+const InformationPopup = ({ title, text, containerId, blackoutId, bottomImg, bottomImgSize }) => {  
     const handleClick = () => {
         document.getElementById(containerId).style.visibility = 'hidden';
 
@@ -28,6 +28,10 @@ const InformationPopup = ({ title, text, containerId, blackoutId }) => {
 
         <div className='popup-text-container'>
             <p className='popup-text'>{text}</p>
+        </div>
+
+        <div className='popup-image-container'>
+            <img src={bottomImg} alt='' style={{width: bottomImgSize}}></img>
         </div>
     </div>
   );
