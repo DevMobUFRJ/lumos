@@ -6,6 +6,10 @@ import lightMatch from '../Assets/Images/nav-lightmatch.svg';
 import glossario from '../Assets/Images/nav-glossario.svg';
 import faq from '../Assets/Images/nav-faq.svg';
 import './Home.css';
+import instagram from '../Assets/Images/instagram-logo.svg';
+import youtube from '../Assets/Images/youtube-logo.svg';
+import tiktok from '../Assets/Images/tiktok-logo.svg';
+import green from '../Assets/Images/green-logo.svg';
 
 const TopLanding = () => {
   return (
@@ -22,17 +26,44 @@ const TopLanding = () => {
         }}>
             <div className='card'>
                 <p className='card-text'>Conheça o projeto <b id="card-text_top_landing">Atitudes Sustentáveis!</b></p>
-                  <Link to="/atitudes-sustentaveis" className='button-container' style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <StaticButton 
-                      text="Saiba mais →" 
-                      fontSize="4vw"
-                      buttonWidth="45%" 
-                      buttonHeight="90%" 
-                      buttonBorderRadius="2rem" 
-                      backgroundColor="#FEB800" 
-                      buttonBorder="none"
-                    />
-                  </Link>
+                <Link to="/atitudes-sustentaveis" className='button-container' style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <StaticButton 
+                    text="Saiba mais →" 
+                    fontSize="4vw"
+                    buttonWidth="45%" 
+                    buttonHeight="90%" 
+                    buttonBorderRadius="2rem" 
+                    backgroundColor="#FEB800" 
+                    buttonBorder="none"
+                  />
+                </Link>
+
+                <div id='lamp-card-buttons-container'>
+                  <div className='card-button-image-container'>
+                    <Link to="https://www.instagram.com/labca.ufrj/" target="_blank" rel="noopener noreferrer">
+                      <img src={instagram} alt='Instagram'></img>
+                    </Link>
+                  </div>
+              
+                  <div className='card-button-image-container'>
+                    <Link to="https://www.youtube.com/LabCA-UFRJ" target="_blank" rel="noopener noreferrer">
+                      <img src={youtube} alt='YouTube'></img>
+                    </Link>
+                  </div>
+
+                  <div className='card-button-image-container'>
+                    <Link to="https://www.tiktok.com/@extensao_labca" target="_blank" rel="noopener noreferrer">
+                      <img src={tiktok} alt='TikTok'></img>
+                    </Link>
+                  </div>
+
+                  <div className='card-button-image-container'>
+                    <Link to="https://www.linktr.ee/labca" target="_blank" rel="noopener noreferrer">
+                      <img src={green} alt='LinkTree'></img>
+                    </Link>
+                  </div>
+
+                </div>
             </div>
         </div>
 
