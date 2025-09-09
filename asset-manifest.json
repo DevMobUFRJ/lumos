@@ -1,14 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.b8618798.css",
-    "main.js": "./static/js/main.b9b99b4a.js",
+    "main.css": "./static/css/main.c95ab2f7.css",
+    "main.js": "./static/js/main.3ca65bdf.js",
     "static/js/453.6a06673a.chunk.js": "./static/js/453.6a06673a.chunk.js",
-    "static/media/Frame470.svg": "./static/media/Frame470.b71cb53d01d746be2eab39ce1684bebc.svg",
-    "static/media/frame47.png": "./static/media/frame47.fff26cd2c2f416fe2625.png",
-    "static/media/frame45.png": "./static/media/frame45.fdbd4f12afc2ffa7fb26.png",
-    "static/media/frame43.png": "./static/media/frame43.ccd480eb5a9254e43f44.png",
-    "static/media/frame44.png": "./static/media/frame44.286df33d7ba56498e0b1.png",
-    "static/media/frame41.png": "./static/media/frame41.9846267ec4dc6fe741f5.png",
+    "static/media/labca.png": "./static/media/labca.695f8dd31ffcc593b3aa.png",
+    "static/media/Frame470.svg": "./static/media/Frame470.498e0a38bca8b23d76aa4fe99c33c797.svg",
     "static/media/glossary-dropdown-5.svg": "./static/media/glossary-dropdown-5.68fe4050027b6148deea6ee5ae187934.svg",
     "static/media/glossary-dropdown-4.svg": "./static/media/glossary-dropdown-4.449bcc22130b0ac6f04fa9ba169fb013.svg",
     "static/media/glossary-dropdown-3.svg": "./static/media/glossary-dropdown-3.72c24cefa5293ead24a54c1ae1df9978.svg",
@@ -17,6 +13,7 @@
     "static/media/imgLamp1.png": "./static/media/imgLamp1.2081bdf00eb8dfdd0126.png",
     "static/media/glossary-dropdown-1.svg": "./static/media/glossary-dropdown-1.a50b956086f160f0a131460861d5e5f9.svg",
     "static/media/imgLamp2.png": "./static/media/imgLamp2.c41f028981f1a32d08cf.png",
+    "static/media/devmob.png": "./static/media/devmob.a199d3842048e37df3e5.png",
     "service-worker.js": "./service-worker.js",
     "static/media/removal 4.png": "./static/media/removal 4.adbc74426389bb4a81d1.png",
     "static/media/JEMA_GER_1639-09-removebg-preview 1.png": "./static/media/JEMA_GER_1639-09-removebg-preview 1.ad8c376eb6ed6ea2ac67.png",
@@ -24,21 +21,23 @@
     "static/media/bgVector.png": "./static/media/bgVector.e44e94c807e99c8e0884.png",
     "static/media/mainPageHeader.svg": "./static/media/mainPageHeader.03521515aa5af391c9417e4091b1dd8d.svg",
     "static/media/instagram-logo.svg": "./static/media/instagram-logo.26b788b7f116addc73de2314d3d4a5bc.svg",
+    "static/media/share.svg": "./static/media/share.446ffe67df89dc065f13f53a551b0de3.svg",
     "static/media/tiktok-logo.svg": "./static/media/tiktok-logo.15e41fe3efbbcfeb7df4ce10d5dbc534.svg",
     "static/media/nav-faq.svg": "./static/media/nav-faq.ead37219a31b36cb324f7a24c3d557c8.svg",
     "static/media/nav-lightmatch.svg": "./static/media/nav-lightmatch.afd3584e0b681ffc3fb923ea11bc4d69.svg",
     "static/media/nav-glossario.svg": "./static/media/nav-glossario.91695391ec3a1481828bbc8c7fece7b1.svg",
+    "static/media/leftArrow.svg": "./static/media/leftArrow.b463102d27cf19fe0eae96f0dfb00764.svg",
     "static/media/youtube-logo.svg": "./static/media/youtube-logo.ec7a38929da9bca1ad92f92d99c8164e.svg",
     "static/media/Vector.svg": "./static/media/Vector.e74bc10c09588feda6a7a4ad7bda03a2.svg",
     "static/media/GlossaryDropdownButton.svg": "./static/media/GlossaryDropdownButton.6872c9d17ddb94a540245fecb484c815.svg",
     "index.html": "./index.html",
     "static/media/green-logo.svg": "./static/media/green-logo.8218539b71533789dea610c8e0897c83.svg",
-    "main.b8618798.css.map": "./static/css/main.b8618798.css.map",
-    "main.b9b99b4a.js.map": "./static/js/main.b9b99b4a.js.map",
+    "main.c95ab2f7.css.map": "./static/css/main.c95ab2f7.css.map",
+    "main.3ca65bdf.js.map": "./static/js/main.3ca65bdf.js.map",
     "453.6a06673a.chunk.js.map": "./static/js/453.6a06673a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8618798.css",
-    "static/js/main.b9b99b4a.js"
+    "static/css/main.c95ab2f7.css",
+    "static/js/main.3ca65bdf.js"
   ]
 }
