@@ -1,0 +1,47 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEB800;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .bg-vector {
+    position: absolute;
+    object-fit: cover;
+    width: 30vw;
+    z-index: 0;
+  }
+  
+  .modal {
+    position: relative;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    color: #5E3200;
+    margin-bottom: 8px;
+  }
+  
+  .message {
+    color: #333;
+    font-size: 16px;
+  }
+  

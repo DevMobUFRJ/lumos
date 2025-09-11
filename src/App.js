@@ -22,6 +22,7 @@ import { useLocation } from 'react-router-dom';
 import MobileOnlyModal from './Components/ModalMobileOnly/ModalMobileOnly';
 import PontosDeLuz from './Components/InfoPagesLigthmatch/PontosDeLuz/PontosDeLuz';
 import QtdSuperficiesEscuras from './Components/InfoPagesLigthmatch/QtdSuperficiesEscuras/QtdSuperficiesEscuras';
+import ModalInstallSuggestion from './Components/ModalInstallSuggestion/ModalInstallSuggestion';
 
 const cardData = [
   {
@@ -123,60 +124,61 @@ const App = () => {
   return (
     <>
     <MobileOnlyModal />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Faq" element={<Faq />} />
-          <Route path="/glossario" element={<Glossary />} />
-          <Route path="/sala" element={<Room/>} />
-          <Route path="/cozinha" element={<Kitchen/>} />
-          <Route path="/quarto" element={<Bedroom/>} />
-          <Route path="/banheiro" element={<Bathroom/>} />
-          <Route path="/luz-geral" element={<AnimatePresence mode='wait'>
-                <motion.div
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -100 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <LuzGeral />
-                </motion.div>
-              </AnimatePresence>} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/atitudes-sustentaveis" element={<AtitudesSustentaveis />} />
-          <Route path="/result" element={<AnimatePresence mode='wait'>
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              <ResultWrapper />
-            </motion.div>
-          </AnimatePresence>} />
-          <Route path="/calcular" element={<CalcResult />} />
-          <Route path="/pontos-de-luz" element={<AnimatePresence mode='wait'>
-                <motion.div
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -100 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <PontosDeLuz />
-                </motion.div>
-              </AnimatePresence>} />
-          <Route path="/qtd-superficies-escuras" element={<AnimatePresence mode='wait'>
-                <motion.div
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -100 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <QtdSuperficiesEscuras />
-                </motion.div>
-              </AnimatePresence>} />
-        </Routes>
-      </Router>
+     <ModalInstallSuggestion />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Faq" element={<Faq />} />
+            <Route path="/glossario" element={<Glossary />} />
+            <Route path="/sala" element={<Room/>} />
+            <Route path="/cozinha" element={<Kitchen/>} />
+            <Route path="/quarto" element={<Bedroom/>} />
+            <Route path="/banheiro" element={<Bathroom/>} />
+            <Route path="/luz-geral" element={<AnimatePresence mode='wait'>
+                  <motion.div
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <LuzGeral />
+                  </motion.div>
+                </AnimatePresence>} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/atitudes-sustentaveis" element={<AtitudesSustentaveis />} />
+            <Route path="/result" element={<AnimatePresence mode='wait'>
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.5 }}
+              >
+                <ResultWrapper />
+              </motion.div>
+            </AnimatePresence>} />
+            <Route path="/calcular" element={<CalcResult />} />
+            <Route path="/pontos-de-luz" element={<AnimatePresence mode='wait'>
+                  <motion.div
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <PontosDeLuz />
+                  </motion.div>
+                </AnimatePresence>} />
+            <Route path="/qtd-superficies-escuras" element={<AnimatePresence mode='wait'>
+                  <motion.div
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <QtdSuperficiesEscuras />
+                  </motion.div>
+                </AnimatePresence>} />
+          </Routes>
+        </Router>
     </>
   );
 };
