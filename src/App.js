@@ -124,7 +124,6 @@ const App = () => {
   return (
     <>
     <MobileOnlyModal />
-     <ModalInstallSuggestion />
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
