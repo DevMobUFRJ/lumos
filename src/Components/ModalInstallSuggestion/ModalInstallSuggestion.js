@@ -21,7 +21,7 @@ export default function ModalInstallSuggestion(){
 
     const isInStandaloneMode = () => (
         window.matchMedia('(display-mode: standalone)').matches || 
-        (window.navigator.standalone === true) // para iOS
+        (window.navigator.standalone === true)
 );
 
     useEffect(() => {
