@@ -76,18 +76,3 @@
         transform: translateY(0);
     }
 }
-
-#popup-devmob {
-    visibility: hidden;
-}
-
-#popup-blackout {
-    background-color: black;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    opacity: 70%;
-    height: 100vh;
-    visibility: hidden;
-}

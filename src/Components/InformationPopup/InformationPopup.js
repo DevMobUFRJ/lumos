@@ -2,9 +2,14 @@ import React from 'react';
 import './InformationPopup.css';
 
 
-const InformationPopup = ({ title, text, containerId, blackoutId, bottomImg, bottomImgSize }) => {  
+const InformationPopup = ({ title, text, containerId, blackoutId, bottomImg, bottomImgSize, shouldShowNavBar = false }) => { 
+    
+    
     const handleClick = () => {
         document.getElementById(containerId).style.visibility = 'hidden';
+        if(shouldShowNavBar){
+                document.getElementById('navBar').style.display = 'flex';
+        }
 
         if (blackoutId != null) {
             document.getElementById(blackoutId).style.visibility = 'hidden';

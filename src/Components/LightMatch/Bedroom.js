@@ -8,6 +8,7 @@ import InputOption from '../../Components/InputOption/InputOption';
 import InputSize from '../../Components/InputSize/InputSize';
 import NavBar from '../../Components/NavBar/NavBar';
 import { useNavigate } from 'react-router-dom';
+import InformationPopup from '../InformationPopup/InformationPopup';
 
 
 
@@ -32,6 +33,9 @@ const Bedroom = () => {
     titulo: "Faixa etária dos residentes",
     opcoes: ["Uso preferencial de idosos", "Uso misto", "Uso preferencial de crianças"]
   }
+
+  const darkSuperficiesTitle = "Quantidade de superfícies escuras";
+  const darkSuperficiesText = "Para saber a quantidade de superfícies escuras, você deve considerar o número de paredes, o piso e o teto.";
 
   const [NumberOfPointLight, setNumberOfPointLight] = useState(0);
   const [AmountOfLampsPerPoint, setAmountOfLampsPerPoint] = useState(0);
@@ -69,6 +73,18 @@ const Bedroom = () => {
         </div>
       </div>
       <NavBar colorFaq={false} colorGlossario={false} colorHome={false} colorLightMatch={true}/>
+
+      <div className='popup' id='popup-room'>
+        <InformationPopup 
+            title={darkSuperficiesTitle}
+            text={darkSuperficiesText}
+            containerId="popup-room"
+            blackoutId="popup-blackout"
+            shouldShowNavBar={true}
+        />
+      </div>
+
+      <div id='popup-blackout'></div>
     </div>
   );
 };

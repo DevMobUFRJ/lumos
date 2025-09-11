@@ -67,3 +67,7 @@ form{
     left: 30%;
     margin-top: 1rem;
 }
+
+#popup-room {
+    visibility: hidden;
+}

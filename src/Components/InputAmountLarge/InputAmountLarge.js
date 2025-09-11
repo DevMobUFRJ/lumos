@@ -5,16 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 const InputAmount = ({ HaveInfo, TypeOfInput, amount, setAmount }) => {
 
-  const navigate = useNavigate();
-
-  const devmobTitle = "DevMob";
-  const devmobText = "teste";
-
   const handleQSE = () => {
-    //document.getElementById('popup-devmob').style.visibility = 'visible';
-    //document.getElementById('popup-blackout').style.visibility = 'visible';
-    
-    navigate('/qtd-superficies-escuras');
+    document.getElementById('popup-room').style.visibility = 'visible';
+    document.getElementById('popup-blackout').style.visibility = 'visible';
+    document.getElementById('navBar').style.display = 'none';
   }
 
   return (
@@ -29,17 +23,6 @@ const InputAmount = ({ HaveInfo, TypeOfInput, amount, setAmount }) => {
         <h3>{amount}</h3>
         <h3 className="sinais" onClick={() => setAmount(amount + 1)}>+</h3>
       </div>
-
-      <div className='popup' id='popup-devmob'>
-        <InformationPopup 
-            title={devmobTitle}
-            text={devmobText}
-            containerId="popup-devmob"
-            blackoutId="popup-blackout"
-        />
-      </div>
-
-      <div id='popup-blackout'></div>
     </div>
   );
 };

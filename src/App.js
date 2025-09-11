@@ -21,7 +21,6 @@ import CalcResult from './Components/CalcResultLightMatch/CalcResult';
 import { useLocation } from 'react-router-dom';
 import MobileOnlyModal from './Components/ModalMobileOnly/ModalMobileOnly';
 import PontosDeLuz from './Components/InfoPagesLigthmatch/PontosDeLuz/PontosDeLuz';
-import QtdSuperficiesEscuras from './Components/InfoPagesLigthmatch/QtdSuperficiesEscuras/QtdSuperficiesEscuras';
 import ModalInstallSuggestion from './Components/ModalInstallSuggestion/ModalInstallSuggestion';
 
 const cardData = [
@@ -164,16 +163,6 @@ const App = () => {
                     transition={{ duration: 0.5 }}
                   >
                     <PontosDeLuz />
-                  </motion.div>
-                </AnimatePresence>} />
-            <Route path="/qtd-superficies-escuras" element={<AnimatePresence mode='wait'>
-                  <motion.div
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <QtdSuperficiesEscuras />
                   </motion.div>
                 </AnimatePresence>} />
           </Routes>
