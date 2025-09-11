@@ -20,6 +20,8 @@ import Result from './Components/LightMatchResult/Result';
 import CalcResult from './Components/CalcResultLightMatch/CalcResult';
 import { useLocation } from 'react-router-dom';
 import MobileOnlyModal from './Components/ModalMobileOnly/ModalMobileOnly';
+import PontosDeLuz from './Components/InfoPagesLigthmatch/PontosDeLuz/PontosDeLuz';
+import QtdSuperficiesEscuras from './Components/InfoPagesLigthmatch/QtdSuperficiesEscuras/QtdSuperficiesEscuras';
 
 const cardData = [
   {
@@ -43,6 +45,7 @@ const cardData = [
 ];
 
 const Home = () => {
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
@@ -116,6 +119,7 @@ const ResultWrapper = () => {
 };
 
 const App = () => {
+
   return (
     <>
     <MobileOnlyModal />
@@ -151,6 +155,26 @@ const App = () => {
             </motion.div>
           </AnimatePresence>} />
           <Route path="/calcular" element={<CalcResult />} />
+          <Route path="/pontos-de-luz" element={<AnimatePresence mode='wait'>
+                <motion.div
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <PontosDeLuz />
+                </motion.div>
+              </AnimatePresence>} />
+          <Route path="/qtd-superficies-escuras" element={<AnimatePresence mode='wait'>
+                <motion.div
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <QtdSuperficiesEscuras />
+                </motion.div>
+              </AnimatePresence>} />
         </Routes>
       </Router>
     </>
