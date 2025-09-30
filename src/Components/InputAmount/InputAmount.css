@@ -49,6 +49,11 @@
     height: 5vw;
 }
 
-.sinais{
+.sinais {
     color: #E28E00;
+    width: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

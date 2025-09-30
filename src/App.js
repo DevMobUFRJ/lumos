@@ -34,13 +34,13 @@ const cardData = [
     image: img2,
     title: 'Explore mais sobre o mundo da iluminação',
     description: 'Com o Glossário você é capaz de entender a importância das propriedades lumínicas e as informações nas embalagens dos produtos de iluminação',
-    color: '#7C3F0B',
+    color: '#984D08',
   },
   {
     image: img3,
     title: 'Você sabe o que é Luz geral?',
     description: 'Lumos explica! Descubra como identificar a iluminação geral na sua casa',
-    color: '#984D08',
+    color: '#7C3F0B',
   },
 ];
 

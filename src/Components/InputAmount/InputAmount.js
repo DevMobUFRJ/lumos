@@ -20,9 +20,9 @@ const InputAmount = ({ TypeOfInput, amount, setAmount, size, setSize }) => {
 
         </div>
         <div id="divInput">
-          <h3 className="sinais" onClick={() => setAmount(Math.max(0, amount - 1))}>-</h3>
+          <div className="sinais" onClick={() => setAmount(Math.max(0, amount - 1))}>-</div>
           <h3>{amount}</h3>
-          <h3 className="sinais" onClick={() => setAmount(amount + 1)}>+</h3>
+          <div className="sinais" onClick={() => setAmount(amount + 1)}>+</div>
         </div>
 
     </div>
