@@ -58,7 +58,12 @@ const Home = () => {
     }
   };
 
-  return (
+  const isInStandaloneMode = () => (
+        window.matchMedia('(display-mode: standalone)').matches || 
+        (window.navigator.standalone === true)
+  );
+
+  if(isInStandaloneMode()) return (
     <AnimatePresence mode='wait'>
       <motion.div
         initial={{ opacity: 0 }}
@@ -106,7 +111,7 @@ const Home = () => {
         </div>
       </motion.div>
     </AnimatePresence>
-  );
+  ); else return (<></>);
 };
 
 const ResultWrapper = () => {
