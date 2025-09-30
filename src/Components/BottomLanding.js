@@ -1,4 +1,4 @@
-import bottomMainLogos from '../Assets/Images/Frame470.svg';
+import bottomMainLogos from '../Assets/Images/bottomMainLogos.svg';
 
 const BottomLanding = ({
     marginTop
