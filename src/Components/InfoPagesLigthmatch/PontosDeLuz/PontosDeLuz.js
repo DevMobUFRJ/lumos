@@ -10,7 +10,7 @@ const PontosDeLuz = () => {
         Caso você utilize <strong>luminárias direcionais</strong> (spots de sobrepor ou de embutir) para a luz geral, Lumos recomenda a troca por luminárias difusas ou indiretas (caso seu teto seja claro). 
         Isso vai ajudar a luz ser distribuída uniformemente e seu cômodo vai ter uma iluminação geral mais eficiente em termos de conforto lumínico. 
         As luminárias que permitem maior difusão do fluxo luminoso são aquelas com globo todo de vidro, podendo ser de sobrepor ou pendente, ou com vidro difusor no caso de luminária de embutir (teto com forro). 
-        As <strong>luminárias indireta</strong> mais eficientes são aqueles pendentes que a luz é direcionada para cima, na direção do teto.
+        As <strong>luminárias indiretas</strong> mais eficientes são aqueles pendentes que a luz é direcionada para cima, na direção do teto.
         Quando o teto é claro, a luz que incide nele é refletida para o ambiente de forma difusa.
     </>
     );

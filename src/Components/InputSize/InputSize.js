@@ -6,7 +6,7 @@ const InputSize = ({ }) => {
     <div id="divPrincipalInputSize">
 
         <div id="divDescricao">
-          <h3 className='divPrincipalTitulo'>Dimensões (m)</h3>
+          <h3 className='divPrincipalTitulo'>Dimensões (m²)</h3>
         </div>
         <div className='div-input-size-container'>
           <div className="divInputSize">
