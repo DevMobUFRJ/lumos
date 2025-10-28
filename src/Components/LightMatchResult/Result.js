@@ -16,7 +16,7 @@ const Result = ({angle, irc, lumen, temperature, room}) => {
         },
         {
             index: "3",
-            text: "Lumos recomenda essas duas opções de temperatura de cor para esse ambiente da sua casa, porém você pode escolher a aparência da luz que mais lhe agrada entre amarela (<3000k), neutra (<4000k) e branca (>6500k)"
+            text: "Lumos recomenda essas duas opções de temperatura de cor para esse ambiente da sua casa, porém você pode escolher a aparência da luz que mais lhe agrada entre amarela (<3000k), neutra (<4000k) e branca (>6500k)."
         },
         {
             index: "4",
