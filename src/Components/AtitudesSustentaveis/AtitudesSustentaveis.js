@@ -1,7 +1,6 @@
 import './AtitudesSustentaveis.css';
 import { useNavigate } from "react-router-dom";
 import leftArrowImage from "../../Assets/Images/leftArrow.svg";
-import shareImage from "../../Assets/Images/share.svg";
 import devmob from "../../Assets/Images/devmob.png";
 import labca from "../../Assets/Images/labca.png";
 import InformationPopup from '../InformationPopup/InformationPopup';
@@ -44,10 +43,6 @@ const AtitudesSustentaveis = () => {
                         onClick={handleClose} 
                         className="atitudes-button">
                         <img src={leftArrowImage} alt='Home'></img>
-                    </div>
-
-                    <div className="atitudes-button">
-                        <img src={shareImage} alt='Compartilhar'></img>
                     </div>
                 </div>
 
