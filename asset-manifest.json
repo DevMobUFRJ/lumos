@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "./static/css/main.a85c5f3c.css",
-    "main.js": "./static/js/main.0894df86.js",
+    "main.js": "./static/js/main.6ff69700.js",
     "static/js/453.6a06673a.chunk.js": "./static/js/453.6a06673a.chunk.js",
     "static/media/labca.png": "./static/media/labca.695f8dd31ffcc593b3aa.png",
-    "static/media/bottomMainLogos.svg": "./static/media/bottomMainLogos.9ab22d609a849deb7d71cdbac7155e1d.svg",
+    "static/media/bottomMainLogos.svg": "./static/media/bottomMainLogos.e3da6e7e4b4da42890aff2de18d259cb.svg",
     "static/media/glossary-dropdown-5.svg": "./static/media/glossary-dropdown-5.68fe4050027b6148deea6ee5ae187934.svg",
     "static/media/glossary-dropdown-4.svg": "./static/media/glossary-dropdown-4.449bcc22130b0ac6f04fa9ba169fb013.svg",
     "static/media/glossary-dropdown-3.svg": "./static/media/glossary-dropdown-3.72c24cefa5293ead24a54c1ae1df9978.svg",
@@ -21,12 +21,11 @@
     "static/media/bgVector.png": "./static/media/bgVector.e44e94c807e99c8e0884.png",
     "static/media/mainPageHeader.svg": "./static/media/mainPageHeader.03521515aa5af391c9417e4091b1dd8d.svg",
     "static/media/instagram-logo.svg": "./static/media/instagram-logo.26b788b7f116addc73de2314d3d4a5bc.svg",
-    "static/media/share.svg": "./static/media/share.57f3dd41765af3f6475bdec68a99f8b3.svg",
     "static/media/tiktok-logo.svg": "./static/media/tiktok-logo.15e41fe3efbbcfeb7df4ce10d5dbc534.svg",
     "static/media/nav-faq.svg": "./static/media/nav-faq.ead37219a31b36cb324f7a24c3d557c8.svg",
     "static/media/nav-lightmatch.svg": "./static/media/nav-lightmatch.afd3584e0b681ffc3fb923ea11bc4d69.svg",
     "static/media/nav-glossario.svg": "./static/media/nav-glossario.91695391ec3a1481828bbc8c7fece7b1.svg",
-    "static/media/leftArrow.svg": "./static/media/leftArrow.4b19bf3b486306290e1bdacc722ec19a.svg",
+    "static/media/leftArrow.svg": "./static/media/leftArrow.b463102d27cf19fe0eae96f0dfb00764.svg",
     "static/media/youtube-logo.svg": "./static/media/youtube-logo.ec7a38929da9bca1ad92f92d99c8164e.svg",
     "static/media/Vector.svg": "./static/media/Vector.e74bc10c09588feda6a7a4ad7bda03a2.svg",
     "static/media/GlossaryDropdownButton.svg": "./static/media/GlossaryDropdownButton.6872c9d17ddb94a540245fecb484c815.svg",
@@ -34,11 +33,11 @@
     "static/media/green-logo.svg": "./static/media/green-logo.8218539b71533789dea610c8e0897c83.svg",
     "static/media/download.svg": "./static/media/download.681b8d4014b7f36c14d240b540dd3c96.svg",
     "main.a85c5f3c.css.map": "./static/css/main.a85c5f3c.css.map",
-    "main.0894df86.js.map": "./static/js/main.0894df86.js.map",
+    "main.6ff69700.js.map": "./static/js/main.6ff69700.js.map",
     "453.6a06673a.chunk.js.map": "./static/js/453.6a06673a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a85c5f3c.css",
-    "static/js/main.0894df86.js"
+    "static/js/main.6ff69700.js"
   ]
 }
