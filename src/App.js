@@ -50,7 +50,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    if(currentIndex == 2){
+    if(currentIndex === 2){
       navigate('/luz-geral');
     } else {
       const nextIndex = currentIndex === cardData.length - 1 ? 0 : currentIndex + 1;
@@ -106,7 +106,7 @@ const Home = () => {
               cursor: 'pointer',
             }}
           >
-            <img src={arrow}/>
+            <img src={arrow} alt='Próximo'/>
           </motion.button>
         </div>
       </motion.div>
